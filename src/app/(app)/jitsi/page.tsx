@@ -132,8 +132,8 @@ export default function JitsiPage() {
                 </div>
             ) : (
                 // Join View
-                <div style={{ padding: "36px 40px", maxWidth: "800px", margin: "0 auto", width: "100%" }}>
-                    <div className="page-header fade-in" style={{ textAlign: "center", marginBottom: "40px" }}>
+                <div className="responsive-container">
+                    <div className="centered-header fade-in">
                         <div style={{ display: "inline-flex", background: "rgba(59,130,246,0.1)", borderRadius: "16px", padding: "12px", marginBottom: "16px", marginTop: "20px" }}>
                             <Video size={36} color="#3b82f6" />
                         </div>
@@ -143,7 +143,7 @@ export default function JitsiPage() {
                         </p>
                     </div>
 
-                    <div className="card fade-in" style={{ padding: "32px", maxWidth: "450px", margin: "0 auto", boxShadow: "0 8px 32px rgba(0,0,0,0.06)", border: "1px solid var(--border)" }}>
+                    <div className="responsive-card fade-in">
                         <form onSubmit={handleJoin} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                             <div>
                                 <label className="input-label" style={{ fontSize: "14px", fontWeight: 500 }}>Room Name *</label>

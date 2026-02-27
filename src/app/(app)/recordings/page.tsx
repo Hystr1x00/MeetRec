@@ -44,26 +44,26 @@ export default function RecordingsPage() {
     }, [doneBots, search]);
 
     return (
-        <div style={{ padding: "36px 40px", maxWidth: "1100px" }}>
+        <div className="responsive-container">
             {/* Header */}
-            <div className="page-header fade-in">
+            <div className="centered-header fade-in">
                 <div>
                     <h1 className="page-title">Recordings</h1>
                     <p className="page-subtitle">View and download recordings from completed bot sessions.</p>
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "10px", background: "white", border: "1px solid var(--border)", borderRadius: "10px", padding: "8px 14px", boxShadow: "0 1px 3px rgba(15,23,42,0.06)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", background: "white", border: "1px solid var(--border)", borderRadius: "10px", padding: "8px 14px", boxShadow: "0 1px 3px rgba(15,23,42,0.06)", marginTop: "16px", width: "100%", maxWidth: "300px" }}>
                     <Search size={15} color="var(--text-muted)" />
                     <input
                         placeholder="Search recordings..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
-                        style={{ background: "none", border: "none", outline: "none", color: "var(--text-primary)", fontSize: "14px", width: "200px" }}
+                        style={{ background: "none", border: "none", outline: "none", color: "var(--text-primary)", fontSize: "14px", width: "100%" }}
                     />
                 </div>
             </div>
 
             {/* Stats */}
-            <div className="fade-in" style={{ display: "flex", gap: "16px", marginBottom: "28px" }}>
+            <div className="fade-in" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))", gap: "16px", marginBottom: "28px" }}>
                 {[
                     { label: "Total Bots", value: loading ? "—" : bots.length, color: "#3b82f6" },
                     { label: "Completed", value: loading ? "—" : doneBots.length, color: "#10b981" },
@@ -112,14 +112,14 @@ export default function RecordingsPage() {
 
                         return (
                             <div key={bot.id} className="card fade-in" style={{ padding: "20px 24px" }}>
-                                <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+                                <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
                                     {/* Icon */}
                                     <div style={{ width: "48px", height: "48px", borderRadius: "14px", background: "rgba(99,102,241,0.08)", border: "1px solid rgba(99,102,241,0.15)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                                         <Video size={20} color="#6366f1" />
                                     </div>
 
                                     {/* Info */}
-                                    <div style={{ flex: 1, overflow: "hidden" }}>
+                                    <div style={{ flex: 1, overflow: "hidden", minWidth: "150px" }}>
                                         <div style={{ fontSize: "14px", fontWeight: 600, color: "var(--text-primary)", marginBottom: "5px", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                                             {getMeetingUrl(bot)}
                                         </div>

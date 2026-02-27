@@ -171,17 +171,17 @@ export default function BotsPage() {
 
     // ─── render ───────────────────────────────────────────────────────────────
     return (
-        <div style={{ padding: "36px 40px", maxWidth: "1100px" }}>
-            <div className="page-header fade-in">
+        <div className="responsive-container">
+            <div className="centered-header fade-in">
                 <div>
                     <h1 className="page-title">Meeting Bots</h1>
                     <p className="page-subtitle">Create a Google Meet or paste any URL — the bot records and transcribes automatically.</p>
                 </div>
             </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", alignItems: "start" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "24px", alignItems: "flex-start" }}>
                 {/* ── Left: form card ── */}
-                <div className="card fade-in" style={{ padding: "28px" }}>
+                <div className="card fade-in" style={{ padding: "28px", flex: "1 1 400px" }}>
                     {/* Tabs */}
                     <div style={{ display: "flex", gap: "12px", marginBottom: "24px" }}>
                         <button
@@ -342,7 +342,7 @@ export default function BotsPage() {
                 </div>
 
                 {/* ── Right: bot list ── */}
-                <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "12px", flex: "1 1 400px", minWidth: "0" }}>
                     <h2 style={{ fontSize: "16px", fontWeight: 600, color: "var(--text-primary)" }}>All Bots</h2>
                     {loading
                         ? [1, 2, 3].map(i => <div key={i} className="skeleton" style={{ height: "78px", borderRadius: "12px" }} />)

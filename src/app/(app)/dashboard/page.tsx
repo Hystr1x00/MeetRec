@@ -45,28 +45,28 @@ export default function DashboardPage() {
     const active = bots.filter((b) => ["in_call_recording", "in_call_not_recording", "joining_call", "in_waiting_room"].includes(getLatestStatus(b))).length;
 
     return (
-        <div style={{ padding: "36px 40px", maxWidth: "1100px" }}>
+        <div className="responsive-container">
             {/* Header */}
-            <div className="page-header fade-in">
+            <div className="centered-header fade-in">
                 <div>
                     <h1 className="page-title">Dashboard</h1>
                     <p className="page-subtitle">Overview of your Recall.ai meeting bots.</p>
                 </div>
-                <Link href="/bots" className="btn-primary">
+                <Link href="/bots" className="btn-primary" style={{ marginTop: "16px" }}>
                     <Plus size={16} />
                     Send Bot
                 </Link>
             </div>
 
             {/* Stats */}
-            <div className="fade-in" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px", marginBottom: "32px" }}>
+            <div className="fade-in" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "16px", marginBottom: "32px" }}>
                 {[
                     { label: "Total Bots", value: loading ? "—" : bots.length, color: "#3b82f6", bg: "rgba(59,130,246,0.08)", icon: BotIcon },
                     { label: "Active Now", value: loading ? "—" : active, color: "#f59e0b", bg: "rgba(245,158,11,0.08)", icon: Loader2 },
                     { label: "Completed", value: loading ? "—" : done, color: "#10b981", bg: "rgba(16,185,129,0.08)", icon: CheckCircle2 },
                 ].map(({ label, value, color, bg, icon: Icon }) => (
                     <div key={label} className="stat-card">
-                        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "12px" }}>
+                        <div style={{ display: "flex", alignItems: "center", justifyItems: "center", justifyContent: "space-between", marginBottom: "12px" }}>
                             <span style={{ fontSize: "13px", color: "var(--text-secondary)" }}>{label}</span>
                             <div style={{ width: "36px", height: "36px", borderRadius: "10px", background: bg, display: "flex", alignItems: "center", justifyContent: "center" }}>
                                 <Icon size={17} color={color} />
@@ -80,7 +80,7 @@ export default function DashboardPage() {
             {/* Quick Access */}
             <div style={{ marginBottom: "32px" }}>
                 <h2 style={{ fontSize: "16px", fontWeight: 600, color: "var(--text-primary)", marginBottom: "14px" }}>Quick Access</h2>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "12px" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: "12px" }}>
                     {[
                         { href: "/jitsi", icon: Video, label: "Jitsi Meet", desc: "Host Internal Meetings", color: "#f59e0b" },
                         { href: "/bots", icon: BotIcon, label: "Send a Bot", desc: "Record any meeting via URL", color: "#3b82f6" },
@@ -95,7 +95,7 @@ export default function DashboardPage() {
                                 <div style={{ fontSize: "14px", fontWeight: 600, color: "var(--text-primary)", marginBottom: "4px" }}>{label}</div>
                                 <div style={{ fontSize: "12px", color: "var(--text-muted)" }}>{desc}</div>
                             </div>
-                            <ArrowRight size={14} color="var(--text-muted)" style={{ alignSelf: "flex-end" }} />
+                            <ArrowRight size={14} color="var(--text-muted)" style={{ alignSelf: "flex-end", marginTop: "auto" }} />
                         </Link>
                     ))}
                 </div>
@@ -129,11 +129,11 @@ export default function DashboardPage() {
                             const meta = getStatusMeta(statusCode);
                             const StatusIcon = meta.icon;
                             return (
-                                <div key={bot.id} className="card" style={{ padding: "16px 20px", display: "flex", alignItems: "center", gap: "16px" }}>
+                                <div key={bot.id} className="card" style={{ padding: "16px 20px", display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
                                     <div style={{ width: "44px", height: "44px", borderRadius: "12px", background: meta.bg, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                                         <StatusIcon size={18} color={meta.color} />
                                     </div>
-                                    <div style={{ flex: 1, overflow: "hidden" }}>
+                                    <div style={{ flex: 1, overflow: "hidden", minWidth: "150px" }}>
                                         <div style={{ fontSize: "14px", fontWeight: 600, color: "var(--text-primary)", marginBottom: "3px", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                                             {getMeetingUrl(bot)}
                                         </div>
