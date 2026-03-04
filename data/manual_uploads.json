@@ -1,0 +1,210 @@
+[
+  {
+    "id": "manual_d2d8600e-25d6-4523-a966-66eccd296e84",
+    "bot_name": "Manual Upload",
+    "created_at": "2026-02-27T07:20:22.090Z",
+    "status_changes": [
+      {
+        "code": "done",
+        "created_at": "2026-02-27T07:20:22.090Z"
+      }
+    ],
+    "meeting_url": "https://jitsi.manajio.com/k",
+    "recordings": [
+      {
+        "started_at": "2026-02-27T07:20:22.090Z",
+        "completed_at": "2026-02-27T07:20:22.090Z",
+        "media_shortcuts": {
+          "video_mixed": {
+            "data": {
+              "download_url": "/uploads/ab305520-0b39-4407-9c14-e0126bdd6808.mp4"
+            }
+          }
+        }
+      }
+    ],
+    "is_manual_upload": true
+  },
+  {
+    "id": "manual_c5fc4fe9-ae4f-46a0-b005-22d82f47aeea",
+    "bot_name": "Manual Upload",
+    "created_at": "2026-03-04T03:03:05.619Z",
+    "status_changes": [
+      {
+        "code": "done",
+        "created_at": "2026-03-04T03:03:05.619Z"
+      }
+    ],
+    "meeting_url": "https://jitsi.manajio.com/testt",
+    "recordings": [
+      {
+        "started_at": "2026-03-04T03:03:05.619Z",
+        "completed_at": "2026-03-04T03:03:05.619Z",
+        "media_shortcuts": {
+          "video_mixed": {
+            "data": {
+              "download_url": "/uploads/61cc5e5a-d9fb-4857-ad31-6d729a347d94.webm"
+            }
+          }
+        }
+      }
+    ],
+    "is_manual_upload": true
+  },
+  {
+    "id": "manual_acb434c4-ab77-42ea-9b71-50d146a9c46d",
+    "bot_name": "Manual Upload",
+    "created_at": "2026-03-04T04:00:48.174Z",
+    "status_changes": [
+      {
+        "code": "done",
+        "created_at": "2026-03-04T04:00:48.175Z"
+      }
+    ],
+    "meeting_url": "https://jitsi.manajio.com/Testing",
+    "recordings": [
+      {
+        "started_at": "2026-03-04T04:00:48.175Z",
+        "completed_at": "2026-03-04T04:00:48.175Z",
+        "media_shortcuts": {
+          "video_mixed": {
+            "data": {
+              "download_url": "/uploads/e3f9ab84-fa51-4691-9560-a267f1f636b2.webm"
+            }
+          }
+        }
+      }
+    ],
+    "is_manual_upload": true
+  },
+  {
+    "id": "manual_6591baf8-b1c6-4146-a828-f5c004a2e454",
+    "bot_name": "Manual Upload",
+    "created_at": "2026-03-04T04:14:26.310Z",
+    "status_changes": [
+      {
+        "code": "done",
+        "created_at": "2026-03-04T04:14:26.310Z"
+      }
+    ],
+    "meeting_url": "https://jitsi.manajio.com/haii",
+    "recordings": [
+      {
+        "started_at": "2026-03-04T04:14:26.310Z",
+        "completed_at": "2026-03-04T04:14:26.310Z",
+        "media_shortcuts": {
+          "video_mixed": {
+            "data": {
+              "download_url": "/uploads/3978618e-955a-478e-8479-60e4dcf457c6.webm"
+            }
+          }
+        }
+      }
+    ],
+    "is_manual_upload": true
+  },
+  {
+    "id": "manual_f11f3da1-4d59-49f0-980c-61fe566071e4",
+    "bot_name": "Manual Upload",
+    "created_at": "2026-03-04T06:01:17.116Z",
+    "status_changes": [
+      {
+        "code": "done",
+        "created_at": "2026-03-04T06:01:17.116Z"
+      }
+    ],
+    "meeting_url": "https://jitsi.manajio.com/testing-1234",
+    "recordings": [
+      {
+        "started_at": "2026-03-04T06:01:17.116Z",
+        "completed_at": "2026-03-04T06:01:17.116Z",
+        "media_shortcuts": {
+          "video_mixed": {
+            "data": {
+              "download_url": "/uploads/82c92277-ef9f-47b6-aa7e-224c8ef46242.webm"
+            }
+          }
+        }
+      }
+    ],
+    "is_manual_upload": true
+  },
+  {
+    "id": "manual_2297f447-08cc-4cfd-959e-4f7a4e1ca19b",
+    "bot_name": "Manual Upload",
+    "created_at": "2026-03-04T06:29:50.524Z",
+    "status_changes": [
+      {
+        "code": "done",
+        "created_at": "2026-03-04T06:29:50.524Z"
+      }
+    ],
+    "meeting_url": "https://jitsi.manajio.com/ayyyayayayaya",
+    "recordings": [
+      {
+        "started_at": "2026-03-04T06:29:50.524Z",
+        "completed_at": "2026-03-04T06:29:50.524Z",
+        "media_shortcuts": {
+          "video_mixed": {
+            "data": {
+              "download_url": "/uploads/f7c08d73-4270-4570-a723-4e03eeaccf6c.webm"
+            }
+          }
+        }
+      }
+    ],
+    "is_manual_upload": true
+  },
+  {
+    "id": "manual_64f0586a-70f3-4964-975c-60086907212d",
+    "bot_name": "Manual Upload",
+    "created_at": "2026-03-04T06:37:37.254Z",
+    "status_changes": [
+      {
+        "code": "done",
+        "created_at": "2026-03-04T06:37:37.254Z"
+      }
+    ],
+    "meeting_url": "https://jitsi.manajio.com/ppppppppppppp",
+    "recordings": [
+      {
+        "started_at": "2026-03-04T06:37:37.254Z",
+        "completed_at": "2026-03-04T06:37:50.530Z",
+        "media_shortcuts": {
+          "video_mixed": {
+            "data": {
+              "download_url": "/uploads/056b578d-4824-4879-b2df-c1af61a36dff.webm"
+            }
+          }
+        }
+      }
+    ],
+    "is_manual_upload": true
+  },
+  {
+    "id": "manual_9e04b41e-1bc6-45fd-aa2a-f21233df463b",
+    "bot_name": "Manual Upload",
+    "created_at": "2026-03-04T06:55:51.788Z",
+    "status_changes": [
+      {
+        "code": "done",
+        "created_at": "2026-03-04T06:55:51.788Z"
+      }
+    ],
+    "meeting_url": "https://jitsi.manajio.com/ttttttttttttttttttttttt",
+    "recordings": [
+      {
+        "started_at": "2026-03-04T06:55:51.788Z",
+        "completed_at": "2026-03-04T06:56:05.064Z",
+        "media_shortcuts": {
+          "video_mixed": {
+            "data": {
+              "download_url": "/uploads/1b9bb621-ee8b-435c-be67-4cd4cf919169.webm"
+            }
+          }
+        }
+      }
+    ],
+    "is_manual_upload": true
+  }
+]

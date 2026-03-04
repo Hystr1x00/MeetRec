@@ -19,7 +19,25 @@ export async function GET() {
 
     try {
         const data = await recallGet<RecallListResponse>("/bot/?limit=50");
-        return NextResponse.json({ bots: data.results ?? [] });
+        let bots = data.results ?? [];
+
+        // Mix in manual uploads
+        try {
+            const fs = await import("fs/promises");
+            const path = await import("path");
+            const dbPath = path.join(process.cwd(), "data", "manual_uploads.json");
+            const fileData = await fs.readFile(dbPath, "utf-8");
+            const manualUploads = JSON.parse(fileData);
+
+            // Validate it's an array
+            if (Array.isArray(manualUploads)) {
+                bots = [...manualUploads, ...bots];
+            }
+        } catch (e) {
+            // It's fine if the file doesn't exist yet
+        }
+
+        return NextResponse.json({ bots });
     } catch (error) {
         const message = error instanceof Error ? error.message : "Failed to fetch bots";
         console.error("[api/bots] GET error:", message);

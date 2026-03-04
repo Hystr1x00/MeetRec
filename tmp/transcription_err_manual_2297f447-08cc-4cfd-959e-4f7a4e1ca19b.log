@@ -1,0 +1,5 @@
+Error: spawn \ROOT\node_modules\ffmpeg-static\ffmpeg.exe ENOENT
+Error: spawn \ROOT\node_modules\ffmpeg-static\ffmpeg.exe ENOENT
+    at ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    at onErrorNT (node:internal/child_process:483:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)

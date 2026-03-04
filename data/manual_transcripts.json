@@ -1,0 +1,32 @@
+{
+  "manual_9e04b41e-1bc6-45fd-aa2a-f21233df463b": [
+    {
+      "speaker": "Speaker 1",
+      "words": [
+        {
+          "text": "Ini",
+          "start_timestamp": 0,
+          "end_timestamp": 1.38,
+          "confidence": 0.99
+        },
+        {
+          "text": "baru",
+          "start_timestamp": 1.38,
+          "end_timestamp": 1.64,
+          "confidence": 0.99
+        },
+        {
+          "text": "record",
+          "start_timestamp": 1.64,
+          "end_timestamp": 2.08,
+          "confidence": 0.99
+        }
+      ],
+      "is_final": true,
+      "start_timestamp": 0,
+      "end_timestamp": 2.08,
+      "language": "id",
+      "original_transcript_id": "groq_manual_9e04b41e-1bc6-45fd-aa2a-f21233df463b_0"
+    }
+  ]
+}

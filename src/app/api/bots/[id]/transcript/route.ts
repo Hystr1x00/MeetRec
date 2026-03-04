@@ -28,6 +28,22 @@ export async function GET(
 
     const { id } = await params;
 
+    // --- Handling Manual Uploads ---
+    if (id.startsWith("manual_")) {
+        try {
+            const fs = await import("fs/promises");
+            const path = await import("path");
+            const dbPath = path.join(process.cwd(), "data", "manual_transcripts.json");
+            const fileData = await fs.readFile(dbPath, "utf-8");
+            const transcripts = JSON.parse(fileData);
+            const entries = transcripts[id] || [];
+            return NextResponse.json({ entries });
+        } catch (e) {
+            // If file doesn't exist or not found
+            return NextResponse.json({ entries: [] });
+        }
+    }
+
     // ── Final Robust v2 Approach ───────────────────────────────────────────
     // 1. Get the bot's direct detail to discover ITS specific recordings.
     const botDetailPath = `/bot/${id}/`;

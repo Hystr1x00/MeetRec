@@ -11,14 +11,16 @@ import {
     LogOut,
     ChevronRight,
     Menu,
-    X
+    X,
+    UploadCloud
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const navItems = [
     { href: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
-    { href: "/bots", icon: Bot, label: "Recall Bots" },
+    { href: "/bots", icon: Bot, label: "Meeting Bots" },
     { href: "/jitsi", icon: Video, label: "Jitsi Meet" },
+    { href: "/upload", icon: UploadCloud, label: "Upload Video" },
     { href: "/recordings", icon: Video, label: "Recordings" },
     { href: "/transcripts", icon: FileText, label: "Transcripts" },
 ];
